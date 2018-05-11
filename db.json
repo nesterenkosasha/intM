@@ -1,0 +1,92 @@
+{
+  "products": [
+    {
+      "id": 1,
+      "title": "SAMSUNG",
+      "url": "http://placehold.it/150/92c952",
+      "popul": 94,
+      "price": "10"
+    },
+    {
+      "id": 2,
+      "title": "ASUS",
+      "url": "http://placehold.it/150/771796",
+      "popul": 47,
+      "price": "21"
+    },
+    {
+      "id": 3,
+      "title": "ASUS",
+      "url": "http://placehold.it/150/24f355",
+      "popul": 32,
+      "price": "44"
+    },
+    {
+      "id": 4,
+      "title": "SAMSUNG",
+      "url": "http://placehold.it/150/d32776",
+      "popul": 61,
+      "price": "13"
+    },
+    {
+      "id": 5,
+      "title": "ASUS",
+      "url": "http://placehold.it/150/f66b97",
+      "popul": 88,
+      "price": "16"
+    },
+    {
+      "id": 6,
+      "title": "SAMSUNG",
+      "url": "http://placehold.it/150/56a8c2",
+      "popul": 44,
+      "price": "30"
+    },
+    {
+      "id": 7,
+      "title": "LENOVO",
+      "url": "http://placehold.it/150/b0f7cc",
+      "popul": 90,
+      "price": "31"
+    },
+    {
+      "id": 8,
+      "title": "SAMSUNG",
+      "url": "http://placehold.it/150/54176f",
+      "popul": 11,
+      "price": "50"
+    },
+    {
+      "id": 9,
+      "title": "LENOVO",
+      "url": "http://placehold.it/150/51aa97",
+      "popul": 16,
+      "price": "60"
+    },
+    {
+      "id": 10,
+      "title": "LENOVO",
+      "url": "http://placehold.it/150/810b14",
+      "popul": 22,
+      "price": "70"
+    },
+    {
+      "id": 11,
+      "title": "LENOVO",
+      "url": "http://placehold.it/150/1ee8a4",
+      "popul": 55,
+      "price": "80"
+    },
+    {
+      "id": 12,
+      "title": "SAMSUNG",
+      "url": "http://placehold.it/150/66b7d2",
+      "popul": 33,
+      "price": "100"
+    }
+  ],
+  "comments": [
+    { "id": 1, "body": "some comment", "postId": 1 }
+  ],
+  "profile": { "name": "typicode" }
+}

@@ -6,6 +6,14 @@
     border-radius: 5px;
     padding: 10px;
 }
+.portfol{
+    display: none;
+    position: absolute;
+    top: 25%;
+    left: 40;
+    width: 300px;
+    border: 5px solid grey;
+}
 .content{
     display: flex;
     flex-direction: row;

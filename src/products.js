@@ -8,9 +8,15 @@
 // const card = new Card()
 
 
-export default class Products {
+// export default 
+class Products {
     constructor(){
         this.createEl = this.createEl.bind(this)
+        this.boughtProducts = getLocalStorage()
+        this.boughtIds = this.boughtProducts.reduce((acc, el) => {
+            return acc.concat(el.id)
+        },[])
+        console.log(this.boughtIds)
     }
 
     createEl(el) {
@@ -19,6 +25,7 @@ export default class Products {
 
     render(el, place){
         this.wrapperProduct = this.createEl("div")
+        this.wrapperProduct.setAttribute("id", el.id)
         this.wrapperProduct.dataset.id = el.id
         this.wrapperProduct.classList.add("wrapperProduct")
         //------------
@@ -34,8 +41,14 @@ export default class Products {
         this.span = this.createEl("span")
         this.span.innerText = ` ${el.price} $`
         this.btn = this.createEl("button")
-        this.btn.classList.add("btn")
-        this.btn.innerText = "BUY"
+        
+        if(this.boughtIds.includes(el.id)){
+            this.btn.innerText = "DELETE"
+            this.btn.classList.add("btn", "PRESSED")
+        } else {
+            this.btn.innerText = "BUY"
+            this.btn.classList.add("btn")
+        }
 
         this.info.appendChild(this.span)
         this.info.appendChild(this.btn)

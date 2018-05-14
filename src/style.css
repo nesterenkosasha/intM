@@ -1,3 +1,89 @@
+bod *{
+    margin: 0;
+    padding: 0;
+}
+
+#header, #footer{
+    max-width: 900px;
+    margin: 0 auto;
+    border: 1px solid grey;
+    text-align: center;
+}
+#CARD{
+    position: fixed;
+    top: 20px;
+    right: 40px;
+    padding: 20px;
+}
+img{
+    width: 100%;
+}
+.wrapperProduct{
+    display: inline-block;
+    margin: 0;
+    max-width: 25%;
+    border: 1px solid grey;
+}
+.cardPlace, .icon{
+    z-index: 100;
+    display: none;
+    min-width: 300px;
+    min-height: 300px;
+    position: fixed;
+    padding: 10px;
+    top: 20%;
+    left: 40%;
+    border: 2px solid grey;
+    border-radius: 5px;
+    background-color: lightblue;
+}
+.cardPlace.block, .icon.block{
+     display: block;
+ }
+#mainContainer{
+    position: relative;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+#main{
+    margin: 14px;
+    display: flex;
+    flex-direction: row;
+}
+#forSort, #pagination{
+    margin: 5px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+#pagination{
+    justify-content: center;
+}
+#aside{
+    display: flex;
+    flex-direction: column;
+    max-width: 150px;
+    padding: 10px;
+    border: 1px solid grey;
+}
+button{
+    display: block;
+    padding: 10px;
+}
+#cardPlace.block{
+    display: block;
+}
+#container{
+    position: relative;
+
+}
+.itemInCard{
+
+}
+
+
 .wrapper{
     position: relative;
     min-width: 300px;
@@ -6,11 +92,11 @@
     border-radius: 5px;
     padding: 10px;
 }
-.portfol{
+#icon{
     display: none;
     position: absolute;
     top: 25%;
-    left: 40;
+    left: 40%;
     width: 300px;
     border: 5px solid grey;
 }
@@ -31,7 +117,7 @@
 }
 .aside{
     width: 25%;
-border: 1px solid grey;
+    border: 1px solid grey;
     display: flex;
     flex-direction: column;
 }
@@ -56,8 +142,8 @@ border: 1px solid grey;
     border: 1px solid grey;
 
 }
-.cardLayout{
-    display: none;
+.cardWrap{
+    //display: none;
     background-color: lightblue;
     position: absolute;
     top: 5%;
@@ -66,9 +152,7 @@ border: 1px solid grey;
     min-width: 300px;
     min-height: 100px;
 }
-.cardLayout.block{
-    display: block;
-}
+
 .itemInCard{
     display: flex;
     flex-direction: row;

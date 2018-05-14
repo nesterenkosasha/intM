@@ -1,7 +1,6 @@
 // export default 
 class Card{
-    constructor(mountPlace){
-       this.mountPlace = mountPlace;
+    constructor(){
        this.arr 
     }
 
@@ -15,7 +14,7 @@ class Card{
         helper.setLocalStorage(this.updatedProducts)
         this.render()
         console.log("MOUNT", this.mountPlace.parentNode)
-        this.mountPlace.parentNode.dispatchEvent( new CustomEvent("re-renderProducts", {
+        container.dispatchEvent( new CustomEvent("re-renderProducts", {
             detail: {
                 id: Id
             }
@@ -25,7 +24,9 @@ class Card{
     render(){
         this.boughtProducts = helper.getLocalStorage();
         if(!this.wrap){
-            this.wrap = this.createEl("div")
+            this.wrap = this.createEl("div");
+            this.wrap.classList.add("cardWrap")
+
         }
         this.wrap.innerHTML = ""        
         this.boughtProducts.forEach(el => {
@@ -34,7 +35,7 @@ class Card{
         this.item.addEventListener("click", async() => { 
             const data = await helper.getData(el.id)
             console.log(data)
-            this.mountPlace.parentNode.dispatchEvent( new CustomEvent("open", {
+            container.dispatchEvent( new CustomEvent("open", {
                 detail: {
                     data
                 }
@@ -74,7 +75,8 @@ class Card{
         this.renderSum(this.val)
 
         this.wrap.appendChild(this.sumPlace)
-        this.mountPlace.appendChild(this.wrap)
+        console.log(container)
+        container.appendChild(this.wrap)
     }
         renderSum(val){
             this.sumPlace.innerText = `To pay: ${val} $`

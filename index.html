@@ -9,14 +9,63 @@
     <link rel="stylesheet" href="./src/style.css">
 </head>
 <body>
-<!-- <h1>pppp</h1> -->
-<script src="./src/portfolio.js"></script>
-<script src="./src/helper.js"></script>
-<script src="./src/constants.js"></script>
-<script src="./src/card.js"></script>
-<script src="./src/products.js"></script>
-<script src="./src/index.js"></script>
+    <header id="header">
+        <h1>SITE</h1>
+        <button id="CARD">CARD</button>
+        <div id="cardPlace"></div>
+    </header>
+
+    <main id="main">
+        <aside id="aside">
+            <h2>FILTERS</h2>
+            <label for="SAMSUNG">
+                <input id="SAMSUNG" type="checkbox">SAMSUNG
+            </label> 
+            <label for="ASUS">
+                <input id="ASUS" type="checkbox">ASUS
+            </label> 
+            <label for="LENOVO">
+                <input id="LENOVO" type="checkbox">LENOVO
+            </label> 
+        
+        </aside>
+        <div id="mainContainer">
+            <div id="forSort">
+                <button id="highPrice">HIGH PRICE</button>       
+                <button id="lowPrice">LOW PRICE</button>       
+                <button id="morePopul">MORE POPULAR</button>       
+                <button id="lessPopul">LESS POPULAR</button>       
+            </div>
+            <div id="container">
+                <div id="portfolio"></div>
+
+            </div>
+            <div id="pagination">
+                <button id="1">1</button>       
+                <button id="2">2</button>       
+                <button id="next">...</button>       
+            </div>
+        </div>
+
+
+
+
+    </main>
+
+    <footer id="footer">
+        <h5>@copyright</h5>
+
+    </footer>
+
+
+    <script src="./src/constants.js"></script>
+    <script src="./src/product.js"></script>
+    <script src="./src/helper.js"></script>
+    <script src="./src/card.js"></script>
+    <script src="./src/index1.js"></script>
+<!-- <script src="./src/portfolio.js"></script>
+<script src="./src/index.js"></script> -->
 
     <!-- <script src="./bundle.js"></script> -->
 </body>
-</html>
+</html><script src="./src/constants.js"></script>

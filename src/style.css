@@ -1,3 +1,82 @@
+bod *{
+    margin: 0;
+    padding: 0;
+}
+
+#header, #footer{
+    max-width: 900px;
+    margin: 0 auto;
+    border: 1px solid grey;
+    text-align: center;
+}
+#CARD{
+    position: fixed;
+    top: 20px;
+    right: 40px;
+    padding: 20px;
+}
+img{
+    width: 100%;
+
+}
+.wrapperProduct{
+    display: inline-block;
+    margin: 0;
+    max-width: 25%;
+    border: 1px solid grey; 
+}
+#cardPlace, #portfolio{
+    display: none;
+    position: fixed;
+    padding: 10px;
+    top: 20%;
+    left: 40%;
+    border: 2px solid grey;
+    border-radius: 5px;
+}
+#mainContainer{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+#main{
+    margin: 14px;
+    display: flex;
+    flex-direction: row;
+}
+#forSort, #pagination{
+    margin: 5px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+#pagination{
+    justify-content: center; 
+}
+#aside{
+    display: flex;
+    flex-direction: column;
+    max-width: 150px;
+    padding: 10px;
+    border: 1px solid grey;
+}
+button{
+    display: block;
+    padding: 10px;
+}
+.block{
+    display: block;
+}
+#container{
+    position: relative;
+
+}
+.itemInCard{
+
+}
+
+
 .wrapper{
     position: relative;
     min-width: 300px;
@@ -56,7 +135,7 @@ border: 1px solid grey;
     border: 1px solid grey;
 
 }
-.cardLayout{
+.cardWrap{
     display: none;
     background-color: lightblue;
     position: absolute;
@@ -66,7 +145,7 @@ border: 1px solid grey;
     min-width: 300px;
     min-height: 100px;
 }
-.cardLayout.block{
+.cardWrap.block{
     display: block;
 }
 .itemInCard{

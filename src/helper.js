@@ -39,10 +39,43 @@ async function getData(id = "") {
     }
 }
 
+async function handelPagination(){
+    try {
+        const data = await fetch("http://localhost:3000/products?_page=10&_limit=18", {
+            method: 'GET',
+            //  mode: 'cors',
+            //  cache: 'default'
+        })
+        console.log(data)
+        if (data.status === 200) {
+            return data.json()
+        } 
+    } catch ({message}) {
+        console.log(message)
+    }
+}
+
+async function getByParam(str, sort, order){
+    console.log(sort)
+    try {
+        const data = await fetch(`http://localhost:3000/products?_sort=${sort}&_order=${order}&${str}`, {
+            method: 'GET'
+        })
+        console.log(data)
+        if (data.status === 200) {
+            return data.json()
+        } 
+        } catch({ message }){
+        console.error(message)
+    }
+}
+
 
 
 const helper = {
     getLocalStorage,
     setLocalStorage,
-    getData
+    getData,
+    handelPagination,
+    getByParam
 }
